@@ -1,0 +1,173 @@
+/* Estilos Globales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #2b3e50;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header p {
+    margin-top: 5px;
+    font-size: 1.2em;
+}
+
+/* Contenedor del Dashboard */
+.dashboard-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajustado para ser responsive */
+    gap: 50px;
+    padding: 50px;
+    max-width: 700px;
+    margin: 0 auto;
+    flex-grow: 2;
+}
+
+/* Estilos para cada tarjeta (card) */
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 
+    60px;
+    text-align: center;
+    transition: transform 0.8s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-35px);
+}
+
+.card h2 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1em;
+    color: #555555;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #2b3e50;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.card a:hover {
+    background-color: #1a2a3b;
+}
+
+/* Responsividad para tablets */
+@media screen and (max-width: 768px) {
+    .dashboard-container {
+        grid-template-columns: 1fr 1fr; /* Dos tarjetas por fila en tablets */
+        gap: 15px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+}
+
+/* Responsividad para móviles */
+@media screen and (max-width: 480px) {
+    .dashboard-container {
+        grid-template-columns: 1fr; /* Una tarjeta por fila en móviles */
+        gap: 15px;
+        padding: 10px; /* Reduce el padding del contenedor */
+    }
+
+    .card {
+        padding: 10px; /* Ajusta el padding de las tarjetas */
+        max-width: 100%; /* Asegura que las tarjetas no excedan el ancho de pantalla */
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Reduce el tamaño de la sombra */
+    }
+
+    header h1 {
+        font-size: 1.8em; /* Tamaño adecuado para títulos */
+    }
+
+    header p {
+        font-size: 1em; /* Tamaño más pequeño para subtítulos */
+    }
+
+    .card h2 {
+        font-size: 1.3em; /* Ajuste de tamaño de los títulos de las tarjetas */
+    }
+
+    .card p {
+        font-size: 0.9em; /* Ajuste del texto en las tarjetas */
+    }
+
+    .card a {
+        padding: 10px 15px; /* Ajuste del tamaño de los botones */
+        font-size: 0.8em;
+    }
+
+    footer {
+        padding: 5px; /* Ajuste del espacio en el footer */
+        text-align: center;
+    }
+}
+
+
+/* Estilos para el Footer */
+footer {
+    background-color: #2b3e50;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+.social-links {
+    margin-top: 10px;
+    background-color: #2b3e50;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    width: 85%;
+}
+
+.btn-footer {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: #ffffff;
+    color: #2b3e50;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: all 0.9s ease;
+    justify-content: center;
+}
+
+.btn-footer:hover {
+    background-color: #1a2a3b;
+    color: #ffffff;
+}
