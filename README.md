@@ -14,6 +14,4 @@ Este proyecto es una página web diseñada como parte del curso de "Seguridad In
 
 Para explorar el contenido, simplemente clona el repositorio o descarga los archivos y abre `index.html` en tu navegador preferido. El sitio web está optimizado para ser responsive, adaptándose tanto a pantallas de escritorio como a dispositivos móviles.
 
-## Estructura del Proyecto
-
 
